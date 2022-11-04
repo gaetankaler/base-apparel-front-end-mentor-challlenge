@@ -7,18 +7,19 @@
 }
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  background: linear-gradient(150.03deg, #ffffff 0%, #fff4f4 84.51%);
 }
 #logo {
+  display: flex;
+  justify-content: flex-start;
   width: 6.3rem;
-  margin-left: 2rem;
-  margin-top: 1.9rem;
+  margin-left: 1.93rem;
+  margin-top: 1.6rem;
   font-weight: 300;
 }
 #hero {
-  margin-top: 1.8rem;
+  margin-top: 2.25rem;
   width: 100%;
 }
 .title {
@@ -31,7 +32,8 @@ body {
 .were {
   font-size: 2.4rem;
   letter-spacing: 0.7rem;
-  font-weight: normal;
+  font-weight: lighter;
+  color: hsl(0, 36%, 70%);
 }
 .coming-soon {
   text-align: center;
@@ -44,31 +46,56 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0.8rem;
+  margin-top: 0.9rem;
 }
 .text {
   text-align: center;
   line-height: 1.4rem;
   margin-left: 2.2rem;
-  margin-right: 2.3rem;
+  margin-right: 2.28rem;
   font-size: 0.9rem;
-  font-weight: 300;
+  font-weight: 400;
+  color: hsl(0, 36%, 70%, 1);
 }
 .input {
   margin-top: 2rem;
   margin-bottom: 5rem;
-  text-align: center;
+  display: flex;
 }
 .input-email {
   border-radius: 3rem;
   width: 80%;
   height: 2.75rem;
+  margin-left: 2rem;
+  display: block;
+  border: none;
+  border: 1px solid hsl(0, 36%, 70%);
+  background: linear-gradient(150.03deg, #ffffff 0%, #fff4f4 84.51%);
 }
 .input-email::placeholder {
-  color: red;
-  padding-left: 1.2rem;
+  padding-left: 1.4rem;
   font-size: 0.9rem;
-  font-weight: 300;
+  font-weight: lighter;
+  color: hsl(0, 36%, 70%);
+}
+.arrow {
+  position: absolute;
+  right: 2.1rem;
+  bottom: -5.5rem;
+  border: none;
+  padding: 0.4rem;
+  border-radius: 3rem;
+  width: 3.3rem;
+  height: 2.1rem;
+  background: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%) 0%,
+    hsl(0, 74%, 74%) 100%
+  );
+}
+.arrow-button {
+  width: 0.7rem;
+  text-align: center;
 }
 .attribution {
   font-size: 11px;
@@ -76,4 +103,66 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media (min-width: 376px) {
+  body {
+    display: flex;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  #logo {
+    display: block;
+    display: flex;
+    width: 10rem;
+    margin-left: 10.2rem;
+    margin-top: 4rem;
+    overflow: hidden;
+  }
+  #hero {
+    content: url(./images/hero-desktop.jpg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 38.2rem;
+    height: 100%;
+    max-height: none;
+    margin-top: 0;
+    display: block;
+  }
+  .were {
+    font-size: 4.2rem;
+    margin-right: 52rem;
+    margin-top: 4.5rem;
+    letter-spacing: 1rem;
+  }
+  .coming-soon {
+    font-size: 4rem;
+    margin-right: 45rem;
+    text-align: left;
+    letter-spacing: 1.2rem;
+    line-height: 4.3rem;
+  }
+  .text {
+    margin-right: 52rem;
+    margin-left: 10.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    line-height: 2rem;
+  }
+  .input {
+    width: 38%;
+    margin-left: 8.3rem;
+  }
+  .input-email {
+    height: 3.5rem;
+  }
+  .arrow {
+    top: 0;
+    left: 0;
+  }
 }
