@@ -1,12 +1,12 @@
-const inputEmail = document.querySelector("input-email");
-const submitButton = document.querySelector("submit");
-const errorIcon = document.querySelector("error-icon");
-const errorMessage = document.querySelector("error-message");
+const inputEmail = document.querySelector(".input-email");
+const submitButton = document.querySelector(".submit");
+const errorIcon = document.querySelector(".error-icon");
+const errorMessage = document.querySelector(".error-message");
 
 submitButton.addEventListener("click", testEmail);
 
 function testEmail(event) {
-  event.preventDefault();
+  // event.preventDefault();/*  */
   if (!emailIsValid(inputEmail)) {
     showError();
   } else {
