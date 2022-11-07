@@ -63,6 +63,7 @@ body {
   display: flex;
 }
 .input-email {
+  padding-left: 1.4rem;
   border-radius: 3rem;
   width: 80%;
   height: 2.75rem;
@@ -73,18 +74,18 @@ body {
   background: linear-gradient(150.03deg, #ffffff 0%, #fff4f4 84.51%);
 }
 .input-email::placeholder {
-  padding-left: 1.4rem;
   font-size: 0.9rem;
   font-weight: lighter;
   color: hsl(0, 36%, 70%);
 }
 .arrow {
+  cursor: url(./images/cursor1.png), pointer;
   position: absolute;
-  right: 2.1rem;
+  right: 1.2rem;
   bottom: -5.5rem;
   border: none;
   padding: 0.4rem;
-  border-radius: 3rem;
+  border-radius: 3.2rem;
   width: 3.3rem;
   height: 2.1rem;
   background: linear-gradient(
@@ -96,6 +97,18 @@ body {
 .arrow-button {
   width: 0.7rem;
   text-align: center;
+}
+.error {
+  position: absolute;
+  left: 15rem;
+  bottom: -4.7rem;
+}
+.valid-email {
+  font-size: 0.6rem;
+  position: absolute;
+  bottom: -6.7rem;
+  left: 3.5rem;
+  color: hsl(0, 93%, 68%);
 }
 .attribution {
   font-size: 11px;
@@ -118,8 +131,8 @@ body {
     display: block;
     display: flex;
     width: 10rem;
-    margin-left: 10.2rem;
-    margin-top: 4rem;
+    margin-left: 9.7rem;
+    margin-top: 4.1rem;
     overflow: hidden;
   }
   #hero {
@@ -127,42 +140,100 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 38.2rem;
-    height: 100%;
+    width: 38.5rem;
+    height: 111%;
     max-height: none;
     margin-top: 0;
     display: block;
   }
   .were {
     font-size: 4.2rem;
-    margin-right: 52rem;
-    margin-top: 4.5rem;
+    margin-right: 52.9rem;
+    margin-top: 4.6rem;
     letter-spacing: 1rem;
   }
   .coming-soon {
     font-size: 4rem;
-    margin-right: 45rem;
+    margin-right: 46.4rem;
     text-align: left;
-    letter-spacing: 1.2rem;
+    letter-spacing: 1.1rem;
     line-height: 4.3rem;
   }
   .text {
     margin-right: 52rem;
-    margin-left: 10.3rem;
+    margin-left: 9.5rem;
+    margin-top: 0.4rem;
     font-size: 1rem;
     font-weight: 600;
     text-align: left;
-    line-height: 2rem;
+    line-height: 1.8rem;
   }
   .input {
-    width: 38%;
-    margin-left: 8.3rem;
+    width: 37%;
+    margin-left: 7.6rem;
+    margin-top: 2.4rem;
   }
   .input-email {
     height: 3.5rem;
   }
+  .input-email::placeholder {
+    font-size: 1rem;
+    padding-left: 2rem;
+  }
   .arrow {
-    top: 0;
-    left: 0;
+    bottom: 5.3rem;
+    right: 52.3rem;
+    width: 5.5rem;
+    height: 2.8rem;
+  }
+  .error {
+    left: 28.67rem;
+    bottom: 6.4rem;
+  }
+  .valid-email {
+    font-weight: 600;
+    font-size: 0.8rem;
+    bottom: 3.8rem;
+    left: 11.4rem;
+  }
+  .attribution {
+    position: absolute;
+    top: 51rem;
+    right: 30rem;
+    font-size: 1.3rem;
+  }
+  .attribution a {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1441px) {
+  #logo {
+    margin-left: 9.5rem;
+    margin-top: 5rem;
+  }
+  .were {
+    margin-right: 57.9rem;
+    margin-top: 3rem;
+  }
+  .coming-soon {
+    margin-right: 51.5rem;
+  }
+  .text {
+    margin-right: 52rem;
+    margin-left: 9.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .arrow {
+    bottom: 5.1rem;
+    right: 55rem;
+  }
+  .error {
+    left: 31.5rem;
+    bottom: 6.2rem;
+  }
+  .attribution {
+    top: 50rem;
+    right: 30rem;
   }
 }
