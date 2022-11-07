@@ -78,7 +78,7 @@ body {
   font-weight: lighter;
   color: hsl(0, 36%, 70%);
 }
-.arrow {
+.submit {
   cursor: url(./images/cursor1.png), pointer;
   position: absolute;
   right: 1.2rem;
@@ -98,17 +98,22 @@ body {
   width: 0.7rem;
   text-align: center;
 }
-.error {
+.error-icon {
   position: absolute;
   left: 15rem;
   bottom: -4.7rem;
+  display: none;
 }
-.valid-email {
+.error-message {
   font-size: 0.6rem;
   position: absolute;
   bottom: -6.7rem;
   left: 3.5rem;
   color: hsl(0, 93%, 68%);
+  display: none;
+}
+.visible {
+  display: block;
 }
 .attribution {
   font-size: 11px;
@@ -180,17 +185,17 @@ body {
     font-size: 1rem;
     padding-left: 2rem;
   }
-  .arrow {
+  .submit {
     bottom: 5.3rem;
     right: 52.3rem;
     width: 5.5rem;
     height: 2.8rem;
   }
-  .error {
+  .error-icon {
     left: 28.67rem;
     bottom: 6.4rem;
   }
-  .valid-email {
+  .error-message {
     font-weight: 600;
     font-size: 0.8rem;
     bottom: 3.8rem;
@@ -224,11 +229,11 @@ body {
     font-size: 1.2rem;
     font-weight: 400;
   }
-  .arrow {
+  .submit {
     bottom: 5.1rem;
     right: 55rem;
   }
-  .error {
+  .error-icon {
     left: 31.5rem;
     bottom: 6.2rem;
   }
